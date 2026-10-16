@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HKICPA QP Progress Tracker — Single Source of Truth · HKICPA QP 筆記</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="topbar">
+<button class="hamburger" aria-label="開關目錄"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+<a class="brand" href="../index.html">HKICPA QP 筆記</a>
+</div>
+<div class="drawer-overlay"></div>
+<div class="layout">
+<aside class="sidebar">
+<a class="brand" href="../index.html">HKICPA QP 筆記</a>
+<p class="tagline">M6 Financial Accounting · M8 Assurance · M10 Business &amp; Company Law</p>
+<nav>
+<div class="nav-cat"><p class="nav-cat-title">計劃與追蹤</p><ul>
+<li><a href="../pages/00-index.html">M10 — 章節學習包總索引（00_INDEX）</a></li>
+<li><a href="../pages/00-index-2.html">M6 — 章節學習包總索引（00_INDEX）</a></li>
+<li><a href="../pages/00-index-3.html">M8 — 章節學習包總索引（00_INDEX）</a></li>
+<li><a href="../pages/qp-error-log-錯題本.html">HKICPA QP 錯題本（Error Log）— Single Source of Truth</a></li>
+<li><a class="active" href="../pages/qp-progress-tracker.html">HKICPA QP Progress Tracker — Single Source of Truth</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W1 · 10/16–22</p><ul>
+<li><a href="../pages/m6-ch01-phase1-2.html">M6 Chapter 1: Financial Reporting Framework — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch01-phase3-quiz.html">M6 Chapter 1: Financial Reporting Framework — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch01-phase3-answers.html">M6 Chapter 1: Financial Reporting Framework — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch02-phase1-2.html">M6 Chapter 2: Fair Value Measurement — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch02-phase3-quiz.html">M6 Chapter 2: Fair Value Measurement — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch02-phase3-answers.html">M6 Chapter 2: Fair Value Measurement — Phase 3 Model Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W2 · 10/23–29</p><ul>
+<li><a href="../pages/m6-ch03-phase1-2.html">M6 Chapter 3: Revenue Recognition — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch03-phase3-quiz.html">M6 Chapter 3: Revenue Recognition — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch03-phase3-answers.html">M6 Chapter 3: Revenue Recognition — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch04-phase1-2.html">M6 Chapter 4: Inventories — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch04-phase3-quiz.html">M6 Chapter 4: Inventories — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch04-phase3-answers.html">M6 Chapter 4: Inventories — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W3 · 10/30–11/5</p><ul>
+<li><a href="../pages/m6-ch05-phase1-2.html">M6 Chapter 5: Property, Plant and Equipment — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch05-phase3-quiz.html">M6 Chapter 5: Property, Plant and Equipment — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch05-phase3-answers.html">M6 Chapter 5: Property, Plant and Equipment — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch06-phase1-2.html">M6 Chapter 6: Investment Property — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch06-phase3-quiz.html">M6 Chapter 6: Investment Property — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch06-phase3-answers.html">M6 Chapter 6: Investment Property — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W4 · 11/6–12</p><ul>
+<li><a href="../pages/m6-ch07-phase1-2.html">M6 Chapter 7: Lease Accounting — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch07-phase3-quiz.html">M6 Chapter 7: Lease Accounting — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch07-phase3-answers.html">M6 Chapter 7: Lease Accounting — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch08-phase1-2.html">M6 Chapter 8: Borrowing Costs — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch08-phase3-quiz.html">M6 Chapter 8: Borrowing Costs — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch08-phase3-answers.html">M6 Chapter 8: Borrowing Costs — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W5 · 11/13–19</p><ul>
+<li><a href="../pages/m6-ch09-phase1-2.html">M6 Chapter 9: Intangible Assets — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch09-phase3-quiz.html">M6 Chapter 9: Intangible Assets — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch09-phase3-answers.html">M6 Chapter 9: Intangible Assets — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch10-phase1-2.html">M6 Chapter 10: Financial Assets, Financial Liabilities and Equity Instruments — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch10-phase3-quiz.html">M6 Chapter 10: Financial Assets, Financial Liabilities and Equity Instruments — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch10-phase3-answers.html">M6 Chapter 10: Financial Assets, Financial Liabilities and Equity Instruments — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W6 · 11/20–26</p><ul>
+<li><a href="../pages/m6-ch11-phase1-2.html">M6 Chapter 11: Impairment of Assets — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch11-phase3-quiz.html">M6 Chapter 11: Impairment of Assets — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch11-phase3-answers.html">M6 Chapter 11: Impairment of Assets — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch12-phase1-2.html">M6 Chapter 12: Non-current Assets Held for Sale and Discontinued Operations — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch12-phase3-quiz.html">M6 Chapter 12: Non-current Assets Held for Sale and Discontinued Operations — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch12-phase3-answers.html">M6 Chapter 12: Non-current Assets Held for Sale and Discontinued Operations — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W7 · 11/27–12/3</p><ul>
+<li><a href="../pages/m6-ch13-phase1-2.html">M6 Chapter 13: Accounting Policies, Changes in Accounting Estimates and Errors — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch13-phase3-quiz.html">M6 Chapter 13: Accounting Policies, Changes in Accounting Estimates and Errors — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch13-phase3-answers.html">M6 Chapter 13: Accounting Policies, Changes in Accounting Estimates and Errors — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch14-phase1-2.html">M6 Chapter 14: Events after the Reporting Period — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch14-phase3-quiz.html">M6 Chapter 14: Events after the Reporting Period — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch14-phase3-answers.html">M6 Chapter 14: Events after the Reporting Period — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W8 · 12/4–10</p><ul>
+<li><a href="../pages/m6-ch15-phase1-2.html">M6 Chapter 15: Provisions, Contingent Liabilities and Contingent Assets — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch15-phase3-quiz.html">M6 Chapter 15: Provisions, Contingent Liabilities and Contingent Assets — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch15-phase3-answers.html">M6 Chapter 15: Provisions, Contingent Liabilities and Contingent Assets — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch16-phase1-2.html">M6 Chapter 16: Income Taxes — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch16-phase3-quiz.html">M6 Chapter 16: Income Taxes — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch16-phase3-answers.html">M6 Chapter 16: Income Taxes — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W9 · 12/11–17</p><ul>
+<li><a href="../pages/m6-ch17-phase1-2.html">M6 Chapter 17: Earnings per Share — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch17-phase3-quiz.html">M6 Chapter 17: Earnings per Share — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch17-phase3-answers.html">M6 Chapter 17: Earnings per Share — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch18-phase1-2.html">M6 Chapter 18: Effects of Changes in Foreign Exchange Rates — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch18-phase3-quiz.html">M6 Chapter 18: Effects of Changes in Foreign Exchange Rates — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch18-phase3-answers.html">M6 Chapter 18: Effects of Changes in Foreign Exchange Rates — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W10 · 12/18–24</p><ul>
+<li><a href="../pages/m6-ch19-phase1-2.html">M6 Chapter 19: Related Party Disclosures — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch19-phase3-quiz.html">M6 Chapter 19: Related Party Disclosures — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch19-phase3-answers.html">M6 Chapter 19: Related Party Disclosures — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch20-phase1-2.html">M6 Chapter 20: Financial Statements Introduction — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch20-phase3-quiz.html">M6 Chapter 20: Financial Statements Introduction — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch20-phase3-answers.html">M6 Chapter 20: Financial Statements Introduction — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W11 · 12/25–31</p><ul>
+<li><a href="../pages/m6-ch21-phase1-2.html">M6 Chapter 21: Statement of Cash Flows — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch21-phase3-quiz.html">M6 Chapter 21: Statement of Cash Flows — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch21-phase3-answers.html">M6 Chapter 21: Statement of Cash Flows — Phase 3 Answers</a></li>
+<li><a href="../pages/m6-ch22-phase1-2.html">M6 Chapter 22: Business Combinations — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch22-phase3-quiz.html">M6 Chapter 22: Business Combinations — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch22-phase3-answers.html">M6 Chapter 22: Business Combinations — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W12 · 1/1–7</p><ul>
+<li><a href="../pages/m6-ch23-phase1-2.html">M6 Chapter 23: Preparation of Consolidated Financial Statements — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch23-phase3-quiz.html">M6 Chapter 23: Preparation of Consolidated Financial Statements — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch23-phase3-answers.html">M6 Chapter 23: Preparation of Consolidated Financial Statements — Phase 3 Quiz (Model Answers)</a></li>
+<li><a href="../pages/m6-ch24-phase1-2.html">M6 Chapter 24: Investments in Associates — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch24-phase3-quiz.html">M6 Chapter 24: Investments in Associates — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch24-phase3-answers.html">M6 Chapter 24: Investments in Associates — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W13 · 1/8–14</p><ul>
+<li><a href="../pages/m6-ch25-phase1-2.html">M6 Chapter 25: Joint Arrangements — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m6-ch25-phase3-quiz.html">M6 Chapter 25: Joint Arrangements — Phase 3 Quiz</a></li>
+<li><a href="../pages/m6-ch25-phase3-answers.html">M6 Chapter 25: Joint Arrangements — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W14 · 1/15–21</p><ul>
+<li><a href="../pages/m10-ch01-phase1-2.html">M10 Chapter 1: Legal System and Regulatory Bodies in Hong Kong — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch01-phase3-quiz.html">M10 Chapter 1: Legal System and Regulatory Bodies in Hong Kong — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch01-phase3-answers.html">M10 Chapter 1: Legal System and Regulatory Bodies in Hong Kong — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch02-phase1-2.html">M10 Chapter 2: Principles of Contract and Consumer Law in Hong Kong (Part 1) — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch02-phase3-quiz.html">M10 Chapter 2: Principles of Contract and Consumer Law in Hong Kong (Part 1) — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch02-phase3-answers.html">M10 Chapter 2: Principles of Contract and Consumer Law in Hong Kong (Part 1) — Phase 3 Model Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W15 · 1/22–28</p><ul>
+<li><a href="../pages/m10-ch03-phase1-2.html">M10 Chapter 3: Principles of Contract and Consumer Law in Hong Kong (Part 2) — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch03-phase3-quiz.html">M10 Chapter 3: Principles of Contract and Consumer Law in Hong Kong (Part 2) — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch03-phase3-answers.html">M10 Chapter 3: Principles of Contract and Consumer Law in Hong Kong (Part 2) — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch04-phase1-2.html">M10 Chapter 4: The Law of Tort and Negligence — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch04-phase3-quiz.html">M10 Chapter 4: The Law of Tort and Negligence — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch04-phase3-answers.html">M10 Chapter 4: The Law of Tort and Negligence — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W16 · 1/29–2/4</p><ul>
+<li><a href="../pages/m10-ch05-phase1-2.html">M10 Chapter 5: Aspects of Agency Law — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch05-phase3-quiz.html">M10 Chapter 5: Aspects of Agency Law — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch05-phase3-answers.html">M10 Chapter 5: Aspects of Agency Law — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch06-phase1-2.html">M10 Chapter 6: Money Laundering, Bribery and Corruption — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch06-phase3-quiz.html">M10 Chapter 6: Money Laundering, Bribery and Corruption — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch06-phase3-answers.html">M10 Chapter 6: Money Laundering, Bribery and Corruption — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W17 · 2/5–11</p><ul>
+<li><a href="../pages/m10-ch07-phase1-2.html">M10 Chapter 7: Introduction to Employment Law in Hong Kong — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch07-phase3-quiz.html">M10 Chapter 7: Introduction to Employment Law in Hong Kong — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch07-phase3-answers.html">M10 Chapter 7: Introduction to Employment Law in Hong Kong — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch08-phase1-2.html">M10 Chapter 8: Incorporation in Hong Kong — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch08-phase3-quiz.html">M10 Chapter 8: Incorporation in Hong Kong — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch08-phase3-answers.html">M10 Chapter 8: Incorporation in Hong Kong — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W18 · 2/12–18</p><ul>
+<li><a href="../pages/m10-ch09-phase1-2.html">M10 Chapter 9: Internal Administration of a Company — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch09-phase3-quiz.html">M10 Chapter 9: Internal Administration of a Company — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch09-phase3-answers.html">M10 Chapter 9: Internal Administration of a Company — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch10-phase1-2.html">M10 Chapter 10: Contentious Matters — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch10-phase3-quiz.html">M10 Chapter 10: Contentious Matters — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch10-phase3-answers.html">M10 Chapter 10: Contentious Matters — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W19 · 2/19–25</p><ul>
+<li><a href="../pages/m10-ch11-phase1-2.html">M10 Chapter 11: Company Capital and Financing Companies — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch11-phase3-quiz.html">M10 Chapter 11: Company Capital and Financing Companies — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch11-phase3-answers.html">M10 Chapter 11: Company Capital and Financing Companies — Phase 3 Answers</a></li>
+<li><a href="../pages/m10-ch12-phase1-2.html">M10 Chapter 12: Listed Companies and the Regulation of Financial Markets — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch12-phase3-quiz.html">M10 Chapter 12: Listed Companies and the Regulation of Financial Markets — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch12-phase3-answers.html">M10 Chapter 12: Listed Companies and the Regulation of Financial Markets — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W20 · 2/26–3/4</p><ul>
+<li><a href="../pages/m10-ch13-phase1-2.html">M10 Chapter 13: Receivership, Liquidation and Winding-up — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m10-ch13-phase3-quiz.html">M10 Chapter 13: Receivership, Liquidation and Winding-up — Phase 3 Quiz</a></li>
+<li><a href="../pages/m10-ch13-phase3-answers.html">M10 Chapter 13: Receivership, Liquidation and Winding-up — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W21 · 3/5–11</p><ul>
+<li><a href="../pages/m8-ch01-phase1-2.html">M8 Chapter 1: Introduction to Auditing — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch01-phase3-quiz.html">M8 Chapter 1: Introduction to Auditing — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch01-phase3-answers.html">M8 Chapter 1: Introduction to Auditing — Phase 3 Answers</a></li>
+<li><a href="../pages/m8-ch02-phase1-2.html">M8 Chapter 2: Legal Liability and Corporate Governance — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch02-phase3-quiz.html">M8 Chapter 2: Legal Liability and Corporate Governance — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch02-phase3-answers.html">M8 Chapter 2: Legal Liability and Corporate Governance — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W22 · 3/12–18</p><ul>
+<li><a href="../pages/m8-ch03-phase1-2.html">M8 Chapter 3: Audit Planning I — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch03-phase3-quiz.html">M8 Chapter 3: Audit Planning I — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch03-phase3-answers.html">M8 Chapter 3: Audit Planning I — Phase 3 Answers</a></li>
+<li><a href="../pages/m8-ch04-phase1-2.html">M8 Chapter 4: Audit Planning II — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch04-phase3-quiz.html">M8 Chapter 4: Audit Planning II — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch04-phase3-answers.html">M8 Chapter 4: Audit Planning II — Phase 3 Quiz — Model Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W23 · 3/19–25</p><ul>
+<li><a href="../pages/m8-ch05-phase1-2.html">M8 Chapter 5: Sampling — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch05-phase3-quiz.html">M8 Chapter 5: Sampling — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch05-phase3-answers.html">M8 Chapter 5: Sampling — Phase 3 Answers</a></li>
+<li><a href="../pages/m8-ch06-phase1-2.html">M8 Chapter 6: Auditing IT Systems — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch06-phase3-quiz.html">M8 Chapter 6: Auditing IT Systems — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch06-phase3-answers.html">M8 Chapter 6: Auditing IT Systems — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W24 · 3/26–4/1</p><ul>
+<li><a href="../pages/m8-ch07-phase1-2.html">M8 Chapter 7: Audit Procedures for Specific Balances and Transactions — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch07-phase3-quiz.html">M8 Chapter 7: Audit Procedures for Specific Balances and Transactions — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch07-phase3-answers.html">M8 Chapter 7: Audit Procedures for Specific Balances and Transactions — Phase 3 Quiz Answers</a></li>
+<li><a href="../pages/m8-ch08-phase1-2.html">M8 Chapter 8: Major Actions During the Audit Completion — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch08-phase3-quiz.html">M8 Chapter 8: Major Actions During the Audit Completion — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch08-phase3-answers.html">M8 Chapter 8: Major Actions During the Audit Completion — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">W25 · 4/2–8</p><ul>
+<li><a href="../pages/m8-ch09-phase1-2.html">M8 Chapter 9: Auditor&#x27;s Reporting — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch09-phase3-quiz.html">M8 Chapter 9: Auditor&#x27;s Reporting — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch09-phase3-answers.html">M8 Chapter 9: Auditor&#x27;s Reporting — Phase 3 Answers</a></li>
+<li><a href="../pages/m8-ch10-phase1-2.html">M8 Chapter 10: Group Audits — Phase 1 速查表 + Phase 2 閃卡</a></li>
+<li><a href="../pages/m8-ch10-phase3-quiz.html">M8 Chapter 10: Group Audits — Phase 3 Quiz</a></li>
+<li><a href="../pages/m8-ch10-phase3-answers.html">M8 Chapter 10: Group Audits — Phase 3 Answers</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">工具表</p><ul>
+<li><a href="../pages/qp-exam-vocab-急救詞彙表.html">考試英文急救詞彙表 + Model Sentences</a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title">其他</p><ul>
+<li><a href="../pages/exam-lens-m10.html">Exam Lens Briefing — HKICPA QP Module 10: Business &amp; Company Law</a></li>
+<li><a href="../pages/exam-lens-m6.html">Exam Lens — HKICPA QP Module 6 Financial Accounting (Associate Level)</a></li>
+<li><a href="../pages/exam-lens-m8.html">Exam Lens — HKICPA QP Module 8: Principles of Auditing</a></li>
+</ul></div>
+</nav></aside>
+<main class="main"><div class="content">
+
+<nav class="breadcrumb"><a href="../index.html">首頁</a><span class="sep">/</span><span>計劃與追蹤</span><span class="sep">/</span><span>HKICPA QP Progress Tracker — Single Source of Truth</span></nav>
+<div class="page-toolbar"><a class="back-home" href="../index.html">← 返回首頁</a><a class="edit-btn" data-note-path="QP_Progress_Tracker.md" href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg>在 GitHub 編輯</a></div>
+
+<p class="page-meta"><span class="badge plan">計劃與追蹤</span><span>最後更新：2026-10-16</span></p>
+<article class="note-body">
+<h1>HKICPA QP Progress Tracker — Single Source of Truth</h1>
+<p>建立：2026-10-16 (HKT) ｜ 考試：2027-05-20 ｜ D-216（30 週 6 日）</p>
+<h2>0. 整體狀態</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>科目</th>
+<th>已完成章節</th>
+<th>Quiz 平均分</th>
+<th>Active Retest</th>
+<th>Mock 分數</th>
+<th>評級</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M6 Financial Accounting</td>
+<td>25/25 學習包生成</td>
+<td>—（未作答）</td>
+<td>0</td>
+<td>—</td>
+<td>待開始作答</td>
+</tr>
+<tr>
+<td>M8 Assurance</td>
+<td>10/10 學習包生成</td>
+<td>—（未作答）</td>
+<td>0</td>
+<td>—</td>
+<td>待開始作答</td>
+</tr>
+<tr>
+<td>M10 Business &amp; Company Law</td>
+<td>13/13 學習包生成</td>
+<td>—（未作答）</td>
+<td>0</td>
+<td>—</td>
+<td>待開始作答</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>保溫優先（最近最少郁嘅科）</strong>：三科學習包全部就緒（48 章 / 144 檔 / 240 題），未有任何作答——首份保溫卷將於第一科首次批改後生效。</p>
+<h2>考試形式（HKEAA 官方 timetable + LP 文本查證；用戶已於 2026-10-16 確認跟真實格式）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>科目</th>
+<th>時長</th>
+<th>模式</th>
+<th>Open/Closed-book</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M6 Financial Accounting</td>
+<td>2.5 小時</td>
+<td>CBE</td>
+<td>Closed-book</td>
+</tr>
+<tr>
+<td>M8 Principles of Auditing</td>
+<td>2.5 小時</td>
+<td>CBE</td>
+<td>Closed-book</td>
+</tr>
+<tr>
+<td>M10 Business &amp; Company Law</td>
+<td>3 小時</td>
+<td>BYOD（HK 考場）</td>
+<td><strong>Open-book</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>M10 校準策略（2026-10-16 確認）</strong>：前期 quiz 維持 closed-book 操練；章節完成後加入 open-book 應試訓練（Ordinances 檢索速度、bookmark 技巧）。</p>
+<p><strong>題型備註</strong>：M6 / M8 為 100% MCQ（OTQ）closed-book CBE（M1–9 一律如此）；M10 為 open-book 3 小時，以 written / case questions 為主。Quiz 出卷會跟足呢個分別。</p>
+<hr />
+<h2>1. Master List — M6 Financial Accounting</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>標題</th>
+<th>LP uploaded</th>
+<th>Phase 1</th>
+<th>Phase 2</th>
+<th>Phase 3 分數</th>
+<th>弱點</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Financial Reporting Framework</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Fair Value Measurement</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Revenue Recognition</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Inventories</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Property, Plant and Equipment</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Investment Property</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Lease Accounting</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Borrowing Costs</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>09</td>
+<td>Intangible Assets</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Financial Assets, Financial Liabilities and Equity Instruments</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Impairment of Assets</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Non-current Assets Held for Sale and Discontinued Operations</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Accounting Policies, Changes in Accounting Estimates and Errors</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Events after the Reporting Period</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Provisions, Contingent Liabilities and Contingent Assets</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Income Taxes</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Earnings per Share</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Effects of Changes in Foreign Exchange Rates</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Related Party Disclosures</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Financial Statements Introduction</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Statement of Cash Flows</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Business Combinations</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Preparation of Consolidated Financial Statements</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Investments in Associates</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Joint Arrangements</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+</tbody>
+</table></div>
+<h2>2. Master List — M8 Assurance</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>標題</th>
+<th>LP uploaded</th>
+<th>Phase 1</th>
+<th>Phase 2</th>
+<th>Phase 3 分數</th>
+<th>弱點</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Introduction to Auditing</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Legal Liability and Corporate Governance</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Audit Planning I</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Audit Planning II</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Sampling</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Auditing IT Systems</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Audit Procedures for Specific Balances and Transactions</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Major Actions During the Audit Completion</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>09</td>
+<td>Auditor's Reporting</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Group Audits</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. Master List — M10 Business &amp; Company Law</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>標題</th>
+<th>LP uploaded</th>
+<th>Phase 1</th>
+<th>Phase 2</th>
+<th>Phase 3 分數</th>
+<th>弱點</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Legal System and Regulatory Bodies in Hong Kong</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Principles of Contract and Consumer Law in Hong Kong (Part 1)</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Principles of Contract and Consumer Law in Hong Kong (Part 2)</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>04</td>
+<td>The Law of Tort and Negligence</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Aspects of Agency Law</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Money Laundering, Bribery and Corruption</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Introduction to Employment Law in Hong Kong</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Incorporation in Hong Kong</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>09</td>
+<td>Internal Administration of a Company</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Contentious Matters</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Company Capital and Financing Companies</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Listed Companies and the Regulation of Financial Markets</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Receivership, Liquidation and Winding-up</td>
+<td>✅ 4th ed</td>
+<td>✅</td>
+<td>✅</td>
+<td>—（未作答）</td>
+<td>—</td>
+<td>學習包就緒</td>
+</tr>
+</tbody>
+</table></div>
+<h2>4. 每週進度 Log</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>週次</th>
+<th>完成內容</th>
+<th>Quiz 紀錄</th>
+<th>保溫卷紀錄</th>
+<th>下週目標</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W1（10-16 → 10-22）</td>
+<td>系統框架建立、考試格式確認、<strong>48 章學習包全量生成（M6×25、M8×10、M10×13）</strong></td>
+<td>—</td>
+<td>—</td>
+<td>開始 M6 Chapter 1 溫習 + Quiz</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>5. Mock 紀錄</h2>
+<p><strong>規則</strong>：該科全部章節完成後 → 20 題 OTQ / 60 分鐘 / closed-book；歷史錯題重點回測；錯題注入下一份 Mock 直至清零。
+評分：16–20 = exam-ready；12–15 = 有暗瘡；≤11 = 分章重溫。官方 past paper 留返考前約 10 日（2027-05-10 起）先做。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>科目</th>
+<th>Mock #</th>
+<th>分數 X/20</th>
+<th>評級</th>
+<th>待回測錯題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>6. 里程碑</h2>
+<ul>
+<li><strong>2026-10-16（D-216）</strong>：系統建立，等待 Chapter 1 LP</li>
+<li><strong>2027-05-10（D-10）</strong>：官方 past paper 階段開始</li>
+<li><strong>2027-05-20（D-Day）</strong>：Exam Day</li>
+</ul>
+<hr />
+<p><em>Last updated: 2026-10-16 (HKT) — 48 章學習包生成完成</em></p>
+</article>
+
+<details class="memo" data-slug="qp-progress-tracker">
+<summary><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>速記<svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></summary>
+<div class="memo-inner">
+<textarea placeholder="喺度寫低你嘅速記，會即打即存喺瀏覽器…" aria-label="速記"></textarea>
+<div class="memo-bar">
+<span class="memo-status">未開始編輯</span>
+<button type="button" class="btn btn-copy">複製內容</button>
+<button type="button" class="btn btn-download">下載為 .md</button>
+<button type="button" class="btn btn-clear danger">清除</button>
+</div>
+</div>
+</details>
+
+<nav class="pager"><a class="prev" href="qp-error-log-錯題本.html"><span class="dir">上一份</span>HKICPA QP 錯題本（Error Log）— Single Source of Truth</a><span class="spacer"></span></nav>
+
+<footer class="site-footer">HKICPA QP 備考筆記 · 由 build.py 自動生成</footer>
+</div></main>
+</div>
+<script src="../assets/config.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
