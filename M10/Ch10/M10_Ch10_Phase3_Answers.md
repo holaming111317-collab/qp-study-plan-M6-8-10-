@@ -1,0 +1,73 @@
+# M10 Chapter 10: Contentious Matters — Phase 3 Answers
+
+### Q1 — Answer: The proper plaintiff principle and the irregularity principle; a derivative action
+**Model Answer (EN):**
+The rule in Foss v Harbottle (1843) 2 Hare 461 has two limbs:
+1. **Proper plaintiff principle** — where a wrong is done to the company (e.g. a breach of directors' duties owed to the company), the proper plaintiff to sue is the company itself; shareholders have no locus standi to sue for the company's loss.
+2. **Irregularity principle** — a member is not entitled to sue over a mere informality or irregularity that can be cured by a vote of the company in general meeting where the intention of the majority is clear, because the majority could simply ratify it by ordinary resolution.
+Where the wrongdoers control the company and prevent it from suing, a member may bring a **derivative action** on the company's behalf — at common law for (i) ultra vires or illegal conduct or (ii) fraud on the company (equitable fraud, requiring wrongdoer control), or under statute (ss.732–733 CO, with leave of the court).
+
+**解題思路（繁中）:** 呢題係基本 framework recall。記住兩個 limb 缺一不可：一個講「邊個告」（proper plaintiff），一個講「小事唔使告」（irregularity）。伏位係將 derivative action 同 unfair prejudice 混淆 —— derivative action 係代公司告、利益歸公司；unfair prejudice 係股東自己嘅 claim。如果答案只寫「company should sue」而冇講 irregularity limb，會蝕分。
+
+**Rule Check:** Foss v Harbottle (1843) 2 Hare 461; Companies Ordinance (Cap. 622) ss.731–733
+
+**Common Trap（繁中）:** 考生常答「fraud on the minority」就當係例外而冇交代 control 元素；LP 明言 negligence alone 唔算 fraud on the company，除非董事從中獲利 —— 呢個 nuance 係區分高分低分嘅位。
+
+### Q2 — Answer: B
+**Model Answer (EN):**
+Section 117 of the Companies Ordinance (Cap. 622) codifies the indoor management rule: under s.117(1), in favour of a person dealing with a company in good faith, the power of the company's directors to bind the company, or authorise others to do so, is regarded as free of any limitation under any relevant document of the company. Good faith is presumed (s.117(2)(b)); knowledge of the limitation alone is not bad faith (s.117(2)(c)); and the outsider need not enquire (s.117(2)(d)). Beacon Bank dealt with Marble Ltd in good faith, so the facility binds Marble Ltd despite the missing ordinary resolution.
+
+**解題思路（繁中）:** Pinpoint section 題，開卷考試都會考你搵唔搵到正確條文。
+- A (s.115) 錯：s.115 係講公司擁有自然人的 capacity and rights, powers and privileges（廢除 ultra vires 後嘅能力條文），同董事權限限制無關。
+- B (s.117) 啱：codified indoor management rule，同普通法 Turquand 規則並行。
+- C (s.124) 錯：s.124 係 common seal（而家係 optional），係簽立形式問題，唔係內部管理規則。
+- D (s.461) 錯：s.461 係話董事任命有瑕疵或唔合資格時，其行為仍然有效 —— 係另一條保護外人嘅條文，但唔係 codified indoor management rule。
+考試伏位：普通法下如有 actual/constructive notice 就唔受保護（Wong Kam San v Yeung Wing Keung (2007) 2 HKLRD 267），但 s.117(2)(c) 話單純知情唔算 bad faith —— 兩條路線嘅差異係常見陷阱。
+
+**Rule Check:** Companies Ordinance (Cap. 622) s.117(1), s.117(2)(b)–(d); Royal British Bank v Turquand (1856) 119 ER 775
+
+**Common Trap（繁中）:** 唔好將 s.117 同 s.461 撈亂：s.117 處理董事權限受章程/決議限制嘅情況；s.461 處理董事任命本身有瑕疵嘅情況。事實唔同、條文唔同。
+
+### Q3 — Answer: A
+**Model Answer (EN):**
+The court is likely to pierce the corporate veil. Piercing requires both control of the company by the wrongdoer and impropriety connected to the use of the company structure to avoid or conceal liability (Hashem v Shayif (2008) EWHC 2380). A person under an existing legal obligation who deliberately evades it by interposing a company under his control may have the veil pierced for that purpose (Prest v Petrodel Resources Ltd (2013) UKSC 34, (2013) 2 AC 415). Here, Harvest's judgment debt to Pearl Ltd already existed; Kelvin then formed Frost, transferred the business, goodwill and assets for HK$1, and stripped Harvest of assets precisely to frustrate enforcement. As in Lee Sow Keng v Kelly McKenzie Ltd (2004) 3 HKLRD 517 (and Jones v Lipman (1962) 1 WLR 832), the corporate veil should be pierced and Frost and Kelvin made liable for the judgment debt.
+
+**解題思路（繁中）:** IRAC: Issue = veil-piercing；Rule = control + impropriety，evasion 必須針對 existing obligation；Application = judgment 已存在先成立 Frost、HK$1 象徵式轉讓、故意令 Harvest 無資產；Conclusion = pierce。
+- B 錯：Hashem v Shayif 第 5 點講明公司唔使一開始就有欺騙意圖，重點係做交易嗰陣係咪被當 façade 用。
+- C 錯：呢句本身係真（Toptrans：common control 唔夠），但佢唔係答案 —— 因為本案唔單止有 control，仲有 impropriety（逃避現存 judgment debt），兩個元素齊晒。
+- D 錯：impropriety 嘅範圍闊過刑事罪行，evasion of existing legal obligations 已經足夠（Prest v Petrodel）。
+考試伏位：如果事實改成「公司喺債務產生之前成立」，就會變 China Ocean Shipping Co v Mitrans Shipping Co (1995) 3 HKC 123 —— 唔 pierce。Timing 係呢類題嘅分水嶺。
+
+**Rule Check:** Prest v Petrodel Resources Ltd (2013) UKSC 34, (2013) 2 AC 415; Lee Sow Keng v Kelly McKenzie Ltd (2004) 3 HKLRD 517; Hashem v Shayif (2008) EWHC 2380; cf. Toptrans Ltd v Delta Resources Co Inc (2005) 1 HKLRD 635
+
+**Common Trap（繁中）:** 最大陷阱係 C —— 佢陳述嘅法律原則正確，考生一見「control alone is insufficient」就揀，但題目問嘅係邊句反映本案法律位置；本案事實已超越 mere control（有故意走數嘅 impropriety），所以 C 唔係 best answer。答 MCQ 要睇「邊句 apply 到事實」，唔係「邊句本身啱」。
+
+### Q4 — Answer: C
+**Model Answer (EN):**
+Doris is liable to account to Summit for the profits. Under the no-profit rule (part of the no-conflict rule), a director must not obtain any benefit or gain by reason of, or through an opportunity or knowledge resulting from, his/her position as director. The rule is strict: liability arises even if the director acted in good faith, even if the company suffered no loss, and even if the company could not have taken up the opportunity itself (Regal (Hastings) Ltd v Gulliver (1967) 2 AC 134 (HL); Boston Deep Sea Fishing and Ice Co v Ansell (1888) 39 Ch D 339). The lease offer came to Doris in her capacity as a director of Summit, and she never obtained the informed consent of the company in general meeting. She must therefore disgorge the profits (subject to any allowance for skill and work).
+
+**解題思路（繁中）:** IRAC: Issue = diversion of corporate opportunity / secret profit；Rule = no-profit rule (Regal (Hastings))；Application = 機會以董事身份送上門、冇喺股東大會披露兼攞 informed consent；Conclusion = account of profits。
+- A 錯：公司冇能力承接唔係辯護 —— Regal (Hastings) 正正係咁判。
+- B 錯：good faith 唔係辯護；no-profit rule 嚴格到連善意都唔使考慮。
+- C 啱：directorship → opportunity → no informed consent → liable to account。
+- D 錯：呢個唔係 s.465 duty of care 問題（冇疏忽大意嘅成分），而係 fiduciary no-conflict/no-profit 問題；remedy 係 disgorgement of profits，唔係 common law damages for loss（common law compensation 只適用於 breach of duty of care）。
+考試伏位：如果 Doris 事先喺 general meeting 全面披露兼獲批准，就可以合法把握機會；另外 LP 話機會喺公司業務範圍以外、而且唔係因董事身份得知，先可能免責（Chinese United Establishments Ltd v Cheung Siu Ki (1997) 2 HKC 212 顯示就算 personal capacity 得知，有 actual conflict 一樣中）。
+
+**Rule Check:** Regal (Hastings) Ltd v Gulliver (1967) 2 AC 134 (HL); Boardman v Phipps (1967) 2 AC 46; Companies Ordinance (Cap. 622) s.536 (disclosure duty)
+
+**Common Trap（繁中）:** 考生最易畀「board genuinely declined」呃到，以為公司拒絕咗董事就可以接。錯 —— 董事會拒絕 ≠ 股東知情同意；LP 明言要 informed consent of the company in general meeting。記住「公司唔要」唔等於「你可以要」。
+
+### Q5 — Answer: A
+**Model Answer (EN):**
+The petition is likely to fail. Under s.724(1) of the Companies Ordinance (Cap. 622), the unfair prejudice remedy protects a member's interests in his/her capacity AS A MEMBER. Where a member has dual roles (e.g. employee, director, creditor), he/she cannot rely on the remedy for conduct affecting his/her interests in those other capacities. Here the dismissal only prejudices Marcus qua employee (loss of salary); his rights qua member — voting rights, dividends, share value — are untouched, and Nova is a purely commercial company with no quasi-partnership understanding that Marcus would participate in management. His remedy, if any, lies in an employment claim, not an unfair prejudice petition.
+
+**解題思路（繁中）:** IRAC: Issue = unfair prejudice capacity 問題；Rule = s.724(1) 要求 prejudice to interests qua member；Application = Nova 係純商業公司、冇參與管理嘅共同理解、股東權益零受損；Conclusion = petition 失敗，應行 employment law 路線。
+- A 啱：qua member / qua employee 嘅分界係 s.724 嘅核心限制。
+- B 錯：wrongful exclusion from management 係 unfairly prejudicial 只適用於 quasi-partnership（基於 trust and confidence 嘅公司）；Nova 係商業公司，而且 Marcus 從來冇管理參與權。O'Neill v Phillips (1999) 1 WLR 1092 亦話單純 trust breakdown 唔夠。
+- C 錯：s.724 冇任何最低持股門檻 —— 呢個係捏造嘅 distractor。
+- D 錯：derivative action 係代公司追討對公司嘅 misconduct；解僱 Marcus 唔係對 Nova 嘅 wrong，而且 Marcus 嘅損失係佢自己嘅 —— 完全走錯路線。
+考試伏位：Panelists 多次批評考生 issue-spotting 失敗。見到股東受委屈唔好即刻寫 unfair prejudice —— 先問「佢邊個身份蝕底？」同「公司性質係咪 quasi-partnership？」。
+
+**Rule Check:** Companies Ordinance (Cap. 622) s.724(1); O'Neill v Phillips (1999) 1 WLR 1092; cf. Re Ching Hing Construction Co Ltd (unrep.) HCCW 889/1999
+
+**Common Trap（繁中）:** 兩個常見錯：(1) 以為 unfair prejudice 係「股東唔開心就告得」—— 其實要影響 member qua member 嘅利益；(2) 將 quasi-partnership 嘅 exclusion-from-management 原則亂套落普通商業公司。答題第一句應該先界定受損利益嘅 capacity。
