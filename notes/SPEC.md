@@ -64,7 +64,7 @@ cd /mnt/agents/output/HKICPA_QP/site && python3 build.py
 ## 5. build.py 改裝要點（M7/M9 → M6/M8/M10 已做嘅嘢）
 
 - `categorize()` regex：`r"(M(?:6|8|10))_Ch(\d+)"`；`MODULE_WEEK = {"M6": M6_WEEK, "M8": M8_WEEK, "M10": M10_WEEK}`
-- **31 週計劃**（2026/10/16 → 2027/5/20）：M6（25 章）W1–13 → M10（13 章）W14–20 → M8（10 章）W21–25，每週 2 章；W26–28 Mock；W29–31 past papers + 衝刺
+- **29 週計劃 v2 螺旋並行版**（2026/11/2 → 2027/5/20；每週 = Mon–Fri）：Round 1 上半 W1–7 M6 Ch1–7‖M10 Ch1–7、W8–12 M6 Ch8–12‖M8 Ch1–5、W13 M6 Ch13、W14 M6 期中 Mock；Round 2 下半 W15–20 M6 Ch14–19‖M10 Ch8–13、W21–25 M6 Ch20–24‖M8 Ch6–10、W26 M6 Ch25、W27 M6 期末 Mock＋清零；期中 Mock＝M10@W8／M8@W13／M6@W14，期末 Mock＝M10@W21／M8@W26／M6@W27；W28–29 past papers 衝刺。完整行程表見 Tracker §🗓️
 - `TYPE_ORDER = {"Phase1-2": 0, "Quiz": 1, "Answers": 2}`（對應我哋嘅檔名 `M6_ChNN_Phase1-2.md` / `_Phase3_Quiz.md` / `_Phase3_Answers.md`）
 - Badge：m6（藍灰）/ m8（鼠尾草綠）/ m10（塵玫瑰）；hero/tagline 已改三科名 + 考試日
 - **閃卡 input 適配**：我哋 Phase 2 用 `### Card N` + `**Front:**` + `**Back:**` 寫法；`_rewrite_card_blocks()` 喺 markdown 層面將佢改寫成翻卡引擎識得嘅 `[Flashcard N]` bullet 格式（兼容 `- **Front:**` bullet 變體，e.g. M6 Ch18）。**渲染引擎（transform_flashcards）本身冇郁過**
