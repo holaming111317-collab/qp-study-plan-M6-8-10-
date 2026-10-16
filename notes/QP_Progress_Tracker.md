@@ -107,3 +107,13 @@
 
 ---
 *Last updated: 2026-10-16 (HKT) — 48 章學習包生成完成*
+
+---
+
+## 🌐 網站同步（2026-10-16 建立）
+
+- **Notes site**：https://holaming111317-collab.github.io/qp-study-plan-M6-8-10-/ （GitHub Pages，筆記自動重建上網）
+- **Repo**：`holaming111317-collab/qp-study-plan-M6-8-10-`（public）
+- **首次推送 commit**：`da5194931a41497e5e7432f1f46341c391b74f01`（155 份 .md 雙路徑 + build.py + rebuild.yml + config.js）
+- **31 週計劃**：W1（10/16–22）M6 Ch01–02 開始 → M6 W1–13 → M10 W14–20 → M8 W21–25 → W26–28 Mock → W29–31 past papers 衝刺
+- 同步規格見 `SPEC.md`（**每個新對話開始必讀**）；每次更新筆記後照 SPEC.md §3–4 推送 + 驗證
