@@ -48,6 +48,9 @@ M10_WEEK = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7,
 M8_WEEK = {1: 8, 2: 9, 3: 10, 4: 11, 5: 12,
            6: 21, 7: 22, 8: 23, 9: 24, 10: 25}
 MODULE_WEEK = {"M6": M6_WEEK, "M8": M8_WEEK, "M10": M10_WEEK}
+# Mock 卷歸類：期中／期末 Mock → 行程表指定週次
+MOCK_WEEK = {("M10", "Midterm"): 8, ("M8", "Midterm"): 13, ("M6", "Midterm"): 14,
+             ("M10", "Final"): 21, ("M8", "Final"): 26, ("M6", "Final"): 27}
 
 # 每週內排序：Phase1-2 速查表+閃卡 → Quiz → Answers
 TYPE_ORDER = {"Phase1-2": 0, "Quiz": 1, "Answers": 2}
@@ -61,6 +64,11 @@ CATEGORY_ORDER = (
 
 def categorize(filename: str) -> str:
     """章節檔按 29 週計劃歸入對應週次；其餘按性質分類。"""
+    m = re.match(r"(M(?:6|8|10))_Mock_(Midterm|Final)", filename)
+    if m:
+        week = MOCK_WEEK.get((m.group(1), m.group(2)))
+        if week:
+            return f"W{week} · {WEEK_DATES[week]}"
     m = re.match(r"(M(?:6|8|10))_Ch(\d+)", filename)
     if m:
         week = MODULE_WEEK.get(m.group(1), {}).get(int(m.group(2)))
